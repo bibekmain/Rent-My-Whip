@@ -6,30 +6,17 @@ db.once('open', async () => {
   await Car.deleteMany();
 
   const procarsducts = await Car.insertMany([
-    /*TODO: add Car seeds
-    Example:
-        {
-            make: "",
-            model: "",
-            year: "",
-            description: "",
-            price: ""
-        }
-    */
-
     {
-        make: "",
-        model: "",
-        year: "",
-        description: "",
-        price: ""
+        make: "Audi",
+        model: "A1",
+        year: "2004",
+        price: "25"
     },
     {
-        make: "",
-        model: "",
-        year: "",
-        description: "",
-        price: ""
+        make: "Mercedes",
+        model: "Benz GLK",
+        year: "2013",
+        price: "50"
     }
   ]);
 
@@ -43,11 +30,10 @@ db.once('open', async () => {
     password: 'testtest',
     cars: [//TODO: add cars
         {
-            make: "",
-            model: "",
-            year: "",
-            description: "",
-            price: ""
+          make: "Audi",
+          model: "A1",
+          year: "2004",
+          price: "25"
         },
     ]
   });
