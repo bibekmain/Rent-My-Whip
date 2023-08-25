@@ -9,12 +9,13 @@ const typeDefs = gql`
   }
 
   type Car {
-    price: Number!
+    carId: ID!
+    price: Int!
     make: String!
     model: String!
-    year: Number!
-    doors: Number
-    ac: boolean
+    year: Int!
+    doors: Int
+    ac: Boolean
     transmission: String
     fuel: String
   }
@@ -29,12 +30,13 @@ const typeDefs = gql`
   }
 
   input CarDataInput {
-    price: Number!
+    carId: String!
+    price: Int!
     make: String!
     model: String!
-    year: Number!
-    doors: Number
-    ac: boolean
+    year: Int!
+    doors: Int
+    ac: Boolean
     transmission: String
     fuel: String
   }
