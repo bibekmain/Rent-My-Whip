@@ -16,6 +16,10 @@ const carSchema = new Schema({
     },
     description: {
         type: string
+    },
+    price: {
+        type: Decimal128,
+        required: true
     }
 });
 
