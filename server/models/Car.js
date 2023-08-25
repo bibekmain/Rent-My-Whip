@@ -15,7 +15,7 @@ const carSchema = new Schema({
         required: true
     },
     description: {
-        type: string
+        type: String
     }
 });
 
