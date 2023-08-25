@@ -12,7 +12,7 @@ const typeDefs = gql`
   type Car {
     make: String!
     model: String!
-    year: Int
+    year: Int!
     description: String
   }
 
@@ -22,7 +22,7 @@ const typeDefs = gql`
   }
 
   type Query {
-    allCars: Car
+    allCars: [Car]
   }
 
   input CarDataInput {
