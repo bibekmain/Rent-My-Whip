@@ -41,14 +41,21 @@ db.once('open', async () => {
     username: 'test',
     email: 'test@test.com',
     password: 'testtest',
-    cars
+    cars: [//TODO: add cars
+        {
+            make: "",
+            model: "",
+            year: "",
+            description: "",
+            price: ""
+        },
+    ]
   });
 
   await User.create({
-    firstName: 'Elijah',
-    lastName: 'Holt',
-    email: 'eholt@testmail.com',
-    password: 'password12345'
+    username: 'test2',
+    email: 'test2@test.com',
+    password: 'testtest'
   });
 
   console.log('users seeded');

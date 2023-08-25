@@ -1,6 +1,5 @@
 const { gql } = require("apollo-server-express");
 
-//TODO: delete unnecessary typedefs and add things that are needed
 const typeDefs = gql`
   type User {
     _id: ID!
@@ -10,10 +9,14 @@ const typeDefs = gql`
   }
 
   type Car {
+    price: Number!
     make: String!
     model: String!
-    year: Int!
-    description: String
+    year: Number!
+    doors: Number
+    ac: boolean
+    transmission: String
+    fuel: String
   }
 
   type Auth {
@@ -26,10 +29,14 @@ const typeDefs = gql`
   }
 
   input CarDataInput {
+    price: Number!
     make: String!
     model: String!
-    year: Int
-    description: String
+    year: Number!
+    doors: Number
+    ac: boolean
+    transmission: String
+    fuel: String
   }
 
   type Mutation {
