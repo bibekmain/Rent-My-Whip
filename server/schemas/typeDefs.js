@@ -9,7 +9,6 @@ const typeDefs = gql`
   }
 
   type Car {
-    carId: ID!
     price: Int!
     make: String!
     model: String!
@@ -30,7 +29,6 @@ const typeDefs = gql`
   }
 
   input CarDataInput {
-    carId: String!
     price: Int!
     make: String!
     model: String!

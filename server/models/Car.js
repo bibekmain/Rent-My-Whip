@@ -2,10 +2,6 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 const carSchema = new Schema({
     //the price of the car
-    carId: {
-        type: String,
-        required: true
-    },
     price: {
         type: Number,
         required: true
