@@ -21,7 +21,10 @@ const userSchema = new Schema({
     required: true,
     minlength: 5
   },
-  cars: [Car.schema]
+  cars: [{
+    type: Schema.Types.ObjectId,
+    ref: 'Car',
+  }]
 });
 
 // set up pre-save middleware to create password
