@@ -36,7 +36,7 @@ const carSchema = new Schema({
     //gas or diesels
     fuel: {
         type: String
-    }
+    },
 });
 const Car = mongoose.model('Car', carSchema);
 module.exports = Car;

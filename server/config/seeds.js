@@ -5,7 +5,7 @@ db.once('open', async () => {
 
   await Car.deleteMany();
 
-  const procarsducts = await Car.insertMany([
+  const cars = await Car.insertMany([
     {
         make: "Audi",
         model: "A1",
@@ -28,14 +28,7 @@ db.once('open', async () => {
     username: 'test',
     email: 'test@test.com',
     password: 'testtest',
-    cars: [//TODO: add cars
-        {
-          make: "Audi",
-          model: "A1",
-          year: "2004",
-          price: "25"
-        },
-    ]
+    cars: [cars[0]._id]
   });
 
   await User.create({

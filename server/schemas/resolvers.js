@@ -9,7 +9,11 @@ const resolvers = {
     allCars: async (parent, args, context) => {
       const cars = await Car.find();
       return cars;
-    },    
+    },
+    //TODO:All users, just for development
+    // allUsers: async (parent, args, context) => {
+
+    // }    
   },
   Mutation: {
     login: async (parent, { email, password }) => {
