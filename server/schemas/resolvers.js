@@ -1,7 +1,7 @@
-const { AuthenticationError } = require('apollo-server-express');
+const { AuthenticationError } = require("apollo-server-express");
 const { User, Car } = require("../models");
-const { signToken } = require('../utils/auth');
-const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+const { signToken } = require("../utils/auth");
+const stripe = require("stripe")("sk_test_4eC39HqLyjWDarjtT1zdp7dc");
 
 //TODO: replace all the categories and products stuff with our own queries
 const resolvers = {
@@ -10,10 +10,6 @@ const resolvers = {
       const cars = await Car.find();
       return cars;
     },
-    //TODO:All users, just for development
-    // allUsers: async (parent, args, context) => {
-
-    // }    
   },
   Mutation: {
     login: async (parent, { email, password }) => {
@@ -36,7 +32,41 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
-  }
+    saveCar: async (parent, { carData }, context) => {
+      if (!context.user) {
+        throw new Error("Authentication required");
+      }
+      try {
+        const newCar = {
+          ...carData,
+        };
+        const updatedUser = await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $addToSet: { cars: newCar } },
+          { new: true, runValidators: true }
+        );
+        if (!updatedUser) {
+          throw new Error("User not found");
+        }
+        return updatedUser;
+      } catch (error) {
+        throw new Error(error.message);
+      }
+    },
+    removeCar: async (parent, { carId }, context) => {
+      if (context.user) {
+        const updatedUser = await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $pull: { cars: { _id: carId } } },
+          { new: true }
+        );
+
+        return updatedUser;
+      }
+
+      throw AuthenticationError;
+    },
+  },
 };
 
 module.exports = resolvers;
