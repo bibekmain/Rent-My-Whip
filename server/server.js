@@ -20,13 +20,30 @@ app.use(express.json());
 // Serve up static assets
 // app.use('/images', express.static(path.join(__dirname, '../client/images')));
 
-// if (process.env.NODE_ENV === 'production') {
-//   app.use(express.static(path.join(__dirname, '../client/build')));
-// }
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../client/build')));
+}
 
-// app.get('/', (req, res) => {
-//   res.sendFile(path.join(__dirname, '../client/build/index.html'));
-// });
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
+
+//route to register if nothing else works 
+//TODO: remove comment and/or route before deployment
+app.post("/register", async (req, res) => {
+  try{
+    const user = new User(req.body);
+    let result = await user.save();
+    result = result.toObject();
+    if(result){
+      delete result.password;
+      response.json(req.body);
+      console.log(result);
+    }
+  } catch (e) {
+    res.json("Something went wrong!")
+  }
+})
 
 
 // Create a new instance of an Apollo server with the GraphQL schema
