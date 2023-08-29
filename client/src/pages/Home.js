@@ -1,18 +1,15 @@
-//TODO: import required components and add them to the home page
+import Hero from "../components/Hero";
+import BookCar from "../components/BookCar";
+import Footer from "../components/Footer";
 
-import React from "react";
-// import ProductList from "../components/ProductList";
-// import CategoryMenu from "../components/CategoryMenu";
-// import Cart from "../components/Cart";
-
-const Home = () => {
+function Home() {
   return (
-    <div className="container">
-      {/* <CategoryMenu />
-      <ProductList />
-      <Cart /> */}
-    </div>
+    <>
+      <Hero />
+      <BookCar />
+      <Footer />
+    </>
   );
-};
+}
 
 export default Home;
