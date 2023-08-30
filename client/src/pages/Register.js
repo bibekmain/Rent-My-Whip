@@ -57,12 +57,11 @@ const handleFormSubmit = async (event) => {
 
   return (
     <>
-    <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
+    <Form noValidate validated={validated} onSubmit={handleFormSubmit} layout="vertical" className="login-form p-5" >
         {/* show alert if server response is bad */}
         <Alert dismissible onClose={() => setShowAlert(false)} show={showAlert} variant='danger'>
           Something went wrong with your signup!
         </Alert>
-          <Form layout="vertical" className="login-form p-5" >
             <h1>Register</h1>
             <hr />
             <Form.Item
@@ -100,7 +99,6 @@ const handleFormSubmit = async (event) => {
             <br />
 
             <Link to="/login">Click Here to Login</Link>
-          </Form>
       </Form>  
     </>
   );
