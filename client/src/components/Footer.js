@@ -52,7 +52,6 @@ function Footer() {
               <li>Sat: 9:00AM - 19:00PM</li>
               <li>Sun: Closed</li>
             </ul> */}
-
             <ul className="footer-content__2">
               <li>Subscription</li>
               <li>

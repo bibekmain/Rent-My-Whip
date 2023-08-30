@@ -274,8 +274,6 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 1.2;
   color:#010103;
-  
-
   margin-bottom: 4rem;
 }
 .hero-content__text__btns {
@@ -311,7 +309,6 @@ body {
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.6);
   background-color: darkgray;
 }
-
 .hero-content__car-img {
   z-index: 2;
   position: absolute;
