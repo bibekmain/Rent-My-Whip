@@ -1,11 +1,11 @@
 import "../src/dist/styles.css";
-import About from "./Pages/About";
-import Home from "./Pages/Home";
-// import Register from "./Pages/Register";
-import Navbar from "../src/components/Navbar";
+import About from "./pages/About";
+import Home from "./pages/Home";
+import Register from "./pages/Register";
+import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
-import Models from "./Pages/Models";
-import Contact from "./Pages/Contact";
+import Models from "./pages/Models";
+import Contact from "./pages/Contact";
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="models" element={<Models />} />
         <Route path="contact" element={<Contact />} />
-        {/* <Route path="register" element={<Register/>}/> */}
+        <Route path="register" element={<Register/>}/>
       </Routes>
     </>
   );
