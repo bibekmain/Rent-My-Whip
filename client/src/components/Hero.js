@@ -56,9 +56,9 @@ Do you have the spirit of adventure, too?
                 >
                   Book Ride &nbsp; <i className="fa-solid fa-circle-check"></i>
                 </Link>
-                <Link className="hero-content__text__btns__learn-more" to="/">
+                {/* <Link className="hero-content__text__btns__learn-more" to="/">
                   Learn More &nbsp; <i className="fa-solid fa-angle-right"></i>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

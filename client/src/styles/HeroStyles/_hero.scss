@@ -86,50 +86,53 @@
       }
 
       &__book-ride {
-        background-color: $text-orange;
+        // background-color: gray;
+        background-color:gray;
         padding: 1.8rem 3rem;
         border-radius: 0.3rem;
-        box-shadow: 0 10px 15px 0 rgb(255 83 48 / 35%);
+        // box-shadow: 0 10px 15px 0 rgb(255 83 48 / 35%);
+        // box-shadow: gray;
         transition: all 0.3s;
-        border: 2px solid $text-orange;
-
+        // border: 2px solid $text-gray;
         @media (max-width: 450px) {
           padding: 1.8rem 8rem;
         }
 
         &:hover {
-          box-shadow: 0 10px 15px 0 rgb(255 83 48 / 60%);
-          background-color: #fa4226;
+          // box-shadow: 0 10px 15px 0 rgb(255 83 48 / 60%);
+          // background-color: #fa4226;
+          background-color: yellowgreen;
+          
         }
       }
 
-      &__learn-more {
-        background-color: $text-black;
-        padding: 1.8rem 3rem;
-        border-radius: 0.3rem;
-        border: 2px solid $text-black;
-        transition: all 0.3s;
+      // &__learn-more {
+      //   background-color: $text-black;
+      //   padding: 1.8rem 3rem;
+      //   border-radius: 0.3rem;
+      //   border: 2px solid $text-black;
+      //   transition: all 0.3s;
 
-        &:hover {
-          background-color: transparent;
-          color: $text-black;
-        }
-      }
+      //   &:hover {
+      //     background-color: transparent;
+      //     color: $text-black;
+      //   }
+      // }
     }
   }
 
-  &__car-img {
-    z-index: 2;
-    position: absolute;
-    right: 0;
-    width: 65%;
-    margin-top: 5rem;
+//   &__car-img {
+//     z-index: 2;
+//     position: absolute;
+//     right: 0;
+//     width: 65%;
+//     margin-top: 5rem;
 
-    @media (max-width: 800px) {
-      display: none;
-    }
-  }
-}
+//     @media (max-width: 800px) {
+//       display: none;
+//     }
+//   }
+// }
 
 .scroll-up {
   position: fixed;

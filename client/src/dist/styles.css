@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: black;
   font-family: "Poppins", sans-serif;
   position: relative;
  
@@ -29,7 +29,7 @@ body {
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #ff4d30 #ffffff;
+  scrollbar-color: #282221 #ffffff;
 }
 
 /* Chrome, Edge and Safari */
@@ -131,16 +131,16 @@ body {
   color: #ff4d30;
 }
 .navbar__buttons__register {
-  background-color: #ff4d30;
+  background-color: gray;
   color: white;
   padding: 1.5rem 3rem;
   border-radius: 3px;
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  box-shadow: 0 10px 15px 0 rgba(60, 54, 53, 0.35);
   transition: all 0.3s;
 }
 .navbar__buttons__register:hover {
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.5);
-  background-color: #fa4226;
+  background-color: darkgray;
 }
 .navbar__buttons a {
   text-decoration: none;
@@ -211,7 +211,7 @@ body {
 .hero-section {
   width: 100%;
   height: 97vh;
-  background-color: #f8f8f8;
+  background-color: #0a0808;
   position: relative;
 }
 
@@ -252,11 +252,11 @@ body {
     align-items: center;
   }
 }
-.hero-content__text h4 {
+/* .hero-content__text h4 {
   font-size: 2.2rem;
   font-family: "Rubik", sans-serif;
   color: #010103;
-}
+} */
 .hero-content__text h1 {
   font-size: 5.2rem;
   font-family: "Poppins", sans-serif;
@@ -270,10 +270,10 @@ body {
   color: #ff4d30;
 }
 .hero-content__text p {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   font-family: "Rubik", sans-serif;
-  line-height: 1.6;
-  color: #706f7b;
+  line-height: 1.2;
+  color:#010103;
   margin-bottom: 4rem;
 }
 .hero-content__text__btns {
@@ -293,12 +293,12 @@ body {
   font-weight: 700;
 }
 .hero-content__text__btns__book-ride {
-  background-color: #ff4d30;
+  background-color: gray;
   padding: 1.8rem 3rem;
   border-radius: 0.3rem;
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
   transition: all 0.3s;
-  border: 2px solid #ff4d30;
+  border: 2px solid #5c5655;
 }
 @media (max-width: 450px) {
   .hero-content__text__btns__book-ride {
@@ -307,18 +307,7 @@ body {
 }
 .hero-content__text__btns__book-ride:hover {
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.6);
-  background-color: #fa4226;
-}
-.hero-content__text__btns__learn-more {
-  background-color: #010103;
-  padding: 1.8rem 3rem;
-  border-radius: 0.3rem;
-  border: 2px solid #010103;
-  transition: all 0.3s;
-}
-.hero-content__text__btns__learn-more:hover {
-  background-color: transparent;
-  color: #010103;
+  background-color: darkgray;
 }
 .hero-content__car-img {
   z-index: 2;
@@ -337,7 +326,7 @@ body {
   position: fixed;
   font-size: 2.5rem;
   color: white;
-  background-color: #ff4d30;
+  background-color:gray;
   border: 3px solid white;
   width: 2rem;
   height: 2rem;
@@ -358,7 +347,7 @@ body {
 
 .book-section {
   position: relative;
-  background: linear-gradient(to bottom, #f8f8f8 20%, #ffffff 80%);
+  background: linear-gradient(to bottom, #070707 20%, #070707 80%);
 }
 
 .book-content {
@@ -366,7 +355,7 @@ body {
   margin-bottom: 10rem;
 }
 .book-content__box {
-  background-color: #ffffff;
+  background-color:gray;
   width: 100%;
   padding: 4rem 4.5rem 5rem 5.5rem;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
@@ -375,10 +364,10 @@ body {
   z-index: 4;
   color: white;
   border-radius: 5px;
-  background-image: url("/src/images/book-car/book-bg.png");
-  background-position: center center;
+  /* background-image: url("/src/images/book-car/book-bg.png"); */
+  /* background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   display: flex;
   flex-direction: column;
   color: #010103;
@@ -470,7 +459,7 @@ body {
   font-size: 1.8rem;
   font-weight: 500;
   color: white;
-  background-color: #ff4d30;
+  background-color:darkgrey;
   box-shadow: 0 10px 15px rgba(255, 83, 48, 0.35);
   cursor: pointer;
   transition: all 0.3s;
@@ -1471,7 +1460,7 @@ body {
 }
 
 footer {
-  background-color: #ffffff;
+  background-color: black;
   padding: 10rem 0;
 }
 
@@ -1519,7 +1508,7 @@ footer {
 }
 .footer-content__1 li:nth-child(2) {
   font-size: 1.6rem;
-  color: #706f7b;
+  color:black;
   line-height: 1.7;
   margin-bottom: 3rem;
 }
@@ -1578,12 +1567,12 @@ footer {
   text-decoration: none;
   color: white;
   font-weight: 700;
-  background-color: #ff4d30;
+  background-color:gray;
   padding: 1.5rem 2.5rem;
   border-radius: 0.3rem;
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.25);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
   transition: all 0.3s;
-  border: 2px solid #ff4d30;
+  border: 2px solid rgba(140, 131, 131, 0.1);
   font-size: 1.6rem;
   width: -moz-fit-content;
   width: fit-content;
@@ -1592,7 +1581,7 @@ footer {
 }
 .submit-email:hover {
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.4);
-  background-color: #fa4226;
+  background-color: darkgray;
 }
 
 .hero-pages {
