@@ -1,34 +1,97 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import {Form,Input} from "react-bootstrap";
+import React, { useState } from 'react';
+import { Form, Button, Alert, Input } from 'react-bootstrap';
+
+import {useMutation}  from '@apollo/client';
+import { ADD_USER } from '../utils/mutations';
+import Auth from '../utils/auth';
 
 
-function Register()
-{
+const Register = () => {
+// set initial form state
+const [userFormData, setUserFormData] = useState({ username: '', email: '', password: '' });
+// set state for form validation
+const [validated] = useState(false);
+// set state for alert
+const [showAlert, setShowAlert] = useState(false);
+const [addUser, { error }] = useMutation(ADD_USER)
+
+const handleInputChange = (event) => {
+  const { name, value } = event.target;
+  setUserFormData({ ...userFormData, [name]: value });
+};
+
+const handleFormSubmit = async (event) => {
+  event.preventDefault();
+
+  // check if form has everything (as per react-bootstrap docs)
+  const form = event.currentTarget;
+  if (form.checkValidity() === false) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
+
+  try {
+    const response = await addUser({
+      variables: {...userFormData}
+    })
+
+    // if (!response.ok) {
+    //   throw new Error('something went wrong!');
+    // }
+
+    // const { token, user } = await response.json();
+    console.log(response.data.addUser.token);
+    Auth.login(response.data.addUser.token);
+  } catch (err) {
+    console.error(err);
+    setShowAlert(true);
+  }
+
+  setUserFormData({
+    username: '',
+    email: '',
+    password: '',
+  });
+};
+
   return (
     <>
-    
+    <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
+        {/* show alert if server response is bad */}
+        <Alert dismissible onClose={() => setShowAlert(false)} show={showAlert} variant='danger'>
+          Something went wrong with your signup!
+        </Alert>
           <Form layout="vertical" className="login-form p-5" >
             <h1>Register</h1>
             <hr />
             <Form.Item
-              name="username"
-              label="Username"
-              rules={[{ required: true }]}
+              type='text'
+              placeholder='Your username'
+              name='username'
+              onChange={handleInputChange}
+              value={userFormData.username}
+              required
             >
               <Input />
             </Form.Item>
             <Form.Item
-              name="password"
-              label="Password"
-              rules={[{ required: true }]}
+              type='email'
+              placeholder='Your email address'
+              name='email'
+              onChange={handleInputChange}
+              value={userFormData.email}
+              required
             >
               <Input />
             </Form.Item>
             <Form.Item
-              name="cpassword"
-              label="Confirm Password"
-              rules={[{ required: true }]}
+              type='password'
+              placeholder='Your password'
+              name='password'
+              onChange={handleInputChange}
+              value={userFormData.password}
+              required
             >
               <Input />
             </Form.Item>
@@ -38,10 +101,10 @@ function Register()
 
             <Link to="/login">Click Here to Login</Link>
           </Form>
-        
+      </Form>  
     </>
   );
-}
+};
 
 
 export default Register;
