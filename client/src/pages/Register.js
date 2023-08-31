@@ -24,7 +24,6 @@ function Register() {
     };
     return (
         <>
-            {/* <p className="logintitle">Login Form</p> */}
             <section className="register-page">
         <HeroPages name="register" />
         <div className="container">

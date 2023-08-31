@@ -11,16 +11,14 @@ function Contact() {
             <div className="contact-div__text">
               <h2>Need additional information?</h2>
               <p>
-                A multifaceted professional skilled in multiple fields of
-                research, development as well as a learning specialist. Over 15
-                years of experience.
+               Contact us for any additional information
               </p>
               <a href="/">
                 <i className="fa-solid fa-phone"></i>&nbsp; (123) 456-7869
               </a>
               <a href="/">
                 <i className="fa-solid fa-envelope"></i>&nbsp;
-                rentmywhip@carmail.com
+                rentmywhip@gmail.com
               </a>
               <a href="/">
                 <i className="fa-solid fa-location-dot"></i>&nbsp; Berkeley,

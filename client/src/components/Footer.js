@@ -6,14 +6,14 @@ function Footer() {
           <div className="footer-content">
             <ul className="footer-content__1">
               <li>
-                <span>G</span> 10
+                <span>G 10</span>
               </li>
               <li>
                 Contact us for any car rental needs
               </li>
               <li>
                 <a href="tel:123456789">
-                  <i className="fa-solid fa-phone"></i> &nbsp; (123) -456-789
+                  <i className="fa-solid fa-phone"></i> &nbsp; TEL: (123) -456-789
                 </a>
               </li>
 
@@ -23,40 +23,24 @@ function Footer() {
                 RentmyWhip@gmail.com"
                 >
                   <i className="fa-solid fa-envelope"></i>
-                  &nbsp; RentmyWhip@gmail.com
+                  &nbsp;EMAIL: RentmyWhip@gmail.com
                 </a>
               </li>
-
-              {/* <li>
-                <a
-                  style={{ fontSize: "14px" }}
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://jephunneh.com/"
-                >
-                  Design by cjephuneh
-                </a>
-              </li> */}
             </ul>
 
             <ul className="footer-content__2">
               <li>Questions</li>
               <li>
-              <i className="fa-solid fa-envelope">For any questions conatact us at </i>
+              <i className="fa-solid fa-envelope">For any questions contact us at </i>
+              </li>
               <li>
-             <a href="#home">
-                  Github
+              <a class ="fab fa-github" href="https://github.com/bibekmain/Rent-my-Whip" >
+              &nbsp;GITHUB
                   </a>
                   </li>
-              </li>
+              
             </ul>
 
-            {/* <ul className="footer-content__2">
-              <li>Working Hours</li>
-              <li>Mon - Fri: 9:00AM - 9:00PM</li>
-              <li>Sat: 9:00AM - 19:00PM</li>
-              <li>Sun: Closed</li>
-            </ul> */}
             <ul className="footer-content__2">
               <li>Subscription</li>
               <li>

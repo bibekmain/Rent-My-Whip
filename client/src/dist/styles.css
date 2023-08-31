@@ -10,7 +10,8 @@ html {
 }
 
 body {
-  background-color:black;
+  background-image: url("../images/hero/main-car.png");
+  background-size: cover;
   font-family: "Poppins", sans-serif;
   position: relative;
  
@@ -52,15 +53,15 @@ body {
 
 *::-webkit-scrollbar-thumb {
   border-radius: 20px;
-  background-color: #ff4d30;
+  background-color:gray;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: #ff4d30;
+  background-color: gray;
 }
 
 *::-webkit-scrollbar-thumb:active {
-  background-color: #ff2525;
+  background-color:gray;
 }
 
 .navbar {
@@ -85,6 +86,7 @@ body {
 .navbar__img img {
   width: 100%;
   height: 100%;
+  border-radius: 70px;
 }
 .navbar__links {
   display: flex;
@@ -106,8 +108,7 @@ body {
   transition:transform  0.5s;
   transform-origin:left;
   transform:scaleX(2);
-  /* animation: pulse 1s;
-  box-shadow: 0 0 0 2em rgba(#fff,0); */
+ 
  
 }
 .navbar__links a:hover,
@@ -292,11 +293,9 @@ body {
 .hero-content__text .text {
   font-size: 5.2rem;
   font-family: "Poppins", sans-serif;
-  filter: brightness(200%);
-  /* text-shadow:-.1em .15em .15em ; */
+  filter: brightness(225%);
   padding-left: 20px;
-  font-weight: 700;
-  /* color: #010103; */
+  font-weight: 850;
   line-height: 1.2;
   margin-top: 1rem;
   margin-bottom: 2.3rem;
@@ -2137,19 +2136,20 @@ body {
             transform: translateY(100%);
   }
 }
+/* book content box styling */
 .book-content__box {
   background-color:transparent;
   width: 100%;
   padding: 4rem 4.5rem 5rem 5.5rem;
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
-  height: auto;
+  /* box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1); */
+  height:100% auto;
   position: relative;
-  z-index: 4;
+  /* z-index: 4; */
   color: white;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  color: rgb(25, 22, 5);
+  /* color: rgb(25, 22, 5); */
 }
 @media (max-width: 400px) {
   .book-content__box {
@@ -2190,7 +2190,7 @@ body {
   margin-bottom: 1.2rem;
 }
 .book-content__box .box-form__car-type label i {
-  color: #ff4d30;
+  color:gray;
 }
 .book-content__box .box-form__car-type select {
   font-size: 1.5rem;
@@ -2219,7 +2219,7 @@ body {
   margin-bottom: 1.2rem;
 }
 .book-content__box .box-form__car-time label i {
-  color: #ff4d30;
+  color:maroon;
 }
 .book-content__box .box-form__car-time ::-webkit-datetime-edit {
   padding: 1.3rem 1.3rem;
@@ -2239,12 +2239,12 @@ body {
   font-weight: 500;
   color: white;
   background-color:darkgrey;
-  box-shadow: 0 10px 15px rgba(255, 83, 48, 0.35);
+  box-shadow: 0 20px 25px rgba(207, 57, 27, 0.35);
   cursor: pointer;
   transition: all 0.3s;
 }
 .book-content__box button:hover {
-  box-shadow: 0 10px 15px rgba(255, 83, 48, 0.55);
+  box-shadow: 0 20px 25px rgba(172, 45, 20, 0.55);
 }
 
 .error-message {
@@ -2334,7 +2334,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
-  background-color: #ff4d30;
+  background-color: maroon;
   color: white;
   align-items: center;
 }
@@ -2356,12 +2356,12 @@ body {
   flex-direction: column;
   gap: 1.5rem;
   padding: 2rem 3rem;
-  background-color: #ffeae6;
+  background-color: floralwhite;
 }
 .booking-modal__message h4 {
   font-size: 1.9rem;
   font-weight: 700;
-  color: #ff4d30;
+  color:maroon;
 }
 .booking-modal__message h4 i {
   font-size: 2.5rem;
@@ -2392,7 +2392,7 @@ body {
 }
 .booking-modal__car-info__dates h5 {
   font-size: 1.8rem;
-  color: #ff4d30;
+  color:maroon;
 }
 .booking-modal__car-info__dates span {
   display: flex;
@@ -2435,7 +2435,7 @@ body {
 }
 .booking-modal__car-info__model h5 {
   font-size: 1.8rem;
-  color: #ff4d30;
+  color:maroon;
 }
 .booking-modal__car-info__model h5 span {
   color: #010103;
@@ -2446,14 +2446,14 @@ body {
 }
 .booking-modal__person-info {
   padding: 3rem 3rem;
-  background-color: white;
+  background-color:white;
   display: flex;
   flex-direction: column;
 }
 .booking-modal__person-info h4 {
   font-size: 1.8rem;
   text-transform: uppercase;
-  color: #ff4d30;
+  color:maroon;
   margin-bottom: 2rem;
 }
 
@@ -2503,10 +2503,10 @@ body {
 .info-form__2col span label, .info-form__1col span label {
   font-size: 1.6rem;
   font-weight: 500;
-  color: #777777;
+  color: maroon;
 }
 .info-form__2col span label b, .info-form__1col span label b {
-  color: #ff4d30;
+  color:maroon;
 }
 .info-form__2col span input, .info-form__1col span input {
   padding: 14px 15px;
@@ -2533,14 +2533,14 @@ body {
   font-size: 2.4rem;
   color: white;
   font-weight: 700;
-  background-color: #ff4d30;
+  background-color: gray;
   border: 1px solid yellow;
   padding: 1.2rem 2rem;
   cursor: pointer;
   transition: all 0.2s;
 }
 .reserve-button button:hover {
-  background-color: #fe3516;
+  background-color: maroon;
 }
 
 .dates-div {
@@ -2548,75 +2548,8 @@ body {
   flex-direction: column;
   gap: 3.2rem;
 }
-/* 
-.plan-section {
-  background-color: #ffffff;
-  padding: 5.3rem 0;
-}
 
-.plan-container {
-  display: flex;
-  flex-direction: column;
-}
-.plan-container__title {
-  margin: 0 auto;
-  text-align: center;
-  color: #010103;
-}
-.plan-container__title h3 {
-  font-size: 2.4rem;
-  font-family: "Rubik", sans-serif;
-  font-weight: 500;
-}
-.plan-container__title h2 {
-  font-size: 4.2rem;
-  font-family: "Poppins", sans-serif;
-  margin: 1.3rem 0 3rem 0;
-}
-.plan-container__boxes {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  margin-top: 3.7rem;
-  padding: 0 3rem;
-}
-@media (max-width: 1021px) {
-  .plan-container__boxes {
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
-  }
-}
-@media (max-width: 800px) {
-  .plan-container__boxes {
-    grid-template-columns: 1fr;
-    margin-top: 1rem;
-  }
-}
-.plan-container__boxes__box {
-  text-align: center;
-  padding: 1rem 6rem;
-}
-@media (max-width: 500px) {
-  .plan-container__boxes__box {
-    padding: 1rem 1rem;
-  }
-}
-.plan-container__boxes__box img {
-  width: 17rem;
-  height: auto;
-}
-.plan-container__boxes__box h3 {
-  font-size: 2.4rem;
-  margin-bottom: 1rem;
-}
-.plan-container__boxes__box p {
-  font-size: 1.6rem;
-  font-family: "Rubik", sans-serif;
-  color: transparent;
-  line-height: 1.43;
-} */
-
-.pick-section {
+/* .pick-section {
   padding: 10rem 0;
 }
 
@@ -2657,8 +2590,8 @@ body {
     flex-direction: column;
     gap: 5rem;
   }
-}
-
+} */
+/* 
 .pick-box {
   display: flex;
   flex-direction: column;
@@ -2750,9 +2683,9 @@ body {
 }
 .cta-btn:hover {
   background-color: #e9381d;
-}
+} */
 
-.box-cars {
+/* .box-cars {
   gap: 11rem;
   display: flex;
   justify-content: space-between;
@@ -2800,29 +2733,7 @@ body {
   }
 }
 
-/* .choose-section {
-  background-color: white;
-  padding: 2rem 0 10rem 0;
-  background-image: url("/src/images/chooseUs/bg.png");
-  background-position: -225px 255px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.choose-container {
-  display: flex;
-  flex-direction: column;
-}
-.choose-container__img {
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
-}
-@media (max-width: 550px) {
-  .choose-container__img {
-    width: 100%;
-  }
-} */
+ */
 
 .text-container {
   display: flex;
@@ -2925,20 +2836,20 @@ body {
 
 /* footer section and footer styling */
 footer {
-  background-color: transparent;
+ 
   padding: 0;
   margin:0;
 }
 
 .footer-content {
   display: grid;
-  color: #010103;
-  grid-template-columns: 27fr 21fr 21fr;
-  gap: 8rem;
+  grid-template-columns: 21fr 21fr 27fr;
+  gap: 6rem;
   justify-content: center;
   text-align: left;
-  color: #010103;
-  padding-left: 10px;
+  color: whitesmoke;
+  padding: 20px;
+
 }
 @media (max-width: 1100px) {
   .footer-content {
@@ -2960,11 +2871,11 @@ footer {
 }
 .footer-content__1 li a {
   text-decoration: none;
-  color: #010103;
-  transition: all 0.2s;
+  color: whitesmoke;
+  transition: all 0.3s;
 }
 .footer-content__1 li a:hover {
-  color: #ff4d30;
+  color: orangered;
 }
 .footer-content__1 li:nth-child(1) {
   font-size: 2.4rem;
@@ -2975,15 +2886,16 @@ footer {
 }
 .footer-content__1 li:nth-child(2) {
   font-size: 1.6rem;
-  color:black;
-  line-height: 1.7;
+  color:whitesmoke;
+  line-height: 1.4;
   margin-bottom: 3rem;
 }
 .footer-content__1 li:nth-child(3), .footer-content__1 li:nth-child(4) {
   font-size: 1.6rem;
-  font-family: "Rubik", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   margin-bottom: 1rem;
+  line-height: 1.4;
 }
 .footer-content__2 {
   list-style: none;
@@ -2995,15 +2907,16 @@ footer {
 }
 .footer-content__2 a {
   text-decoration: none;
-  color: #010103;
+  color: whitesmoke;
   transition: all 0.2s;
 }
 .footer-content__2 a:hover {
-  color: #ff4d30;
+  color: orangered;
 }
 .footer-content__2 li {
   font-size: 1.6rem;
   margin-bottom: 1rem;
+  line-height: 1.4;
 }
 .footer-content__2 li:nth-child(1) {
   font-size: 2.4rem;
@@ -3017,7 +2930,7 @@ footer {
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
-  background-color: #ececec;
+  background-color: whitesmoke;
   border-width: 1px;
   border-color: transparent;
   padding: 10px 60px;
@@ -3042,9 +2955,8 @@ footer {
   border: 2px solid rgba(140, 131, 131, 0.1);
   font-size: 1.6rem;
   width: -moz-fit-content;
-  width: fit-content;
   cursor: pointer;
-  width: 100%;
+  width: 55%;
 }
 .submit-email:hover {
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.4);
@@ -3053,28 +2965,28 @@ footer {
 
 .hero-pages {
   width: 100%;
-  height: 41%;
+  height: 60%;
   background-image: url("/src/images/hero/heroes-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-/* .hero-pages__overlay {
+.hero-pages__overlay {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   right: 0;
   background-color: rgba(159, 143, 143, 0.92);
-} */
+}
 .hero-pages__text {
   display: flex;
   flex-direction: column;
   z-index: 3;
   position: relative;
   width: 100%;
-  height: 50rem;
+  height: 55rem;
   justify-content: center;
   color: #010103;
   padding:5rem;
@@ -3093,14 +3005,14 @@ footer {
   transition: all 0.2s;
 }
 .hero-pages__text p a:hover {
-  color: #ff4d30;
+  color: orangered;
 }
-
+/* about page styling */
 .about-main {
-  margin: 1rem auto;
+  margin: 2rem auto;
   display: flex;
   gap: 5rem;
-  max-width: 90rem;
+  max-width: 80rem;
   align-items: center;
 }
 @media (max-width: 960px) {
@@ -3116,10 +3028,7 @@ footer {
     max-width: 100%;
   }
 }
-.about-main__img {
-  width: 43rem;
-  height: 43rem;
-}
+
 @media (max-width: 960px) {
   .about-main__img {
     margin: 0 auto;
@@ -3147,7 +3056,8 @@ footer {
   line-height: 1.2;
 }
 .about-main__text p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 600;
   color: #0c0b19;
   font-family: "Rubik", sans-serif;
   line-height: 1.5;
@@ -3256,8 +3166,9 @@ footer {
     width: fit-content;
   }
 }
+/* vehicle model page styling */
 .models-div__box {
-  border: 1px solid #d5d5d5;
+  border: 1px solid whitesmoke;
   border-radius: 0.3rem;
   display: flex;
   width: 35rem;
@@ -3282,7 +3193,7 @@ footer {
   padding: 2rem 3rem;
   display: flex;
   flex-direction: column;
-  color: #010103;
+  color:wheat;
 }
 .models-div__box__descr__name-price {
   display: flex;
@@ -3327,30 +3238,30 @@ footer {
   margin-top: 2.5rem;
   margin: 2rem auto;
   padding-bottom: 2.5rem;
-  border-bottom: 1px solid #c6c6c6;
+  border-bottom: 1px solid #5c5a5a;
 }
 .models-div__box__descr__name-price__details span {
   font-size: 1.8rem;
   font-weight: 500;
-  color: #777777;
+  color:wheat;
   text-align: left;
 }
 .models-div__box__descr__name-price__details span i {
   color: #010103;
 }
 .models-div__box__descr__name-price__btn {
-  background-color: #ff4d30;
+  background-color: gray;
   padding: 1.8rem 3rem;
   border-radius: 0.3rem;
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  box-shadow: 0 10px 15px 0 rgba(223, 66, 35, 0.35);
   transition: all 0.3s;
-  border: 2px solid #ff4d30;
+  border: 2px solid transparent;
   font-size: 1.8rem;
   cursor: pointer;
 }
 .models-div__box__descr__name-price__btn:hover {
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.6);
-  background-color: #fa4226;
+  background-color: orangered;
 }
 .models-div__box__descr__name-price__btn a {
   text-decoration: none;
@@ -3367,10 +3278,6 @@ footer {
   margin: 0 auto;
   color: #010103;
   padding: 10rem 2rem;
-  background-image: url("/src/images/banners/bg-contact.png");
-  background-size: auto;
-  background-position: center center;
-  background-repeat: no-repeat;
 }
 @media (max-width: 950px) {
   .contact-div {
@@ -3396,17 +3303,18 @@ footer {
   margin-bottom: 2rem;
 }
 .contact-div__text p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: "Rubik", sans-serif;
-  color: #706f7b;
+  color: #0f0f14;
   line-height: 1.6;
   margin-bottom: 2rem;
+  font-weight: 600;
 }
 .contact-div__text a {
   text-decoration: none;
   color: #010103;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 700;
   transition: all 0.2s;
   margin-bottom: 0.5rem;
 }
@@ -3472,7 +3380,6 @@ footer {
   margin: 0 auto;
   color: #010103;
   padding: 10rem 2rem;
-  /* background-image: url("/src/images/banners/bg-contact.png"); */
   background-size: auto;
   background-position: center center;
   background-repeat: no-repeat;
@@ -3503,13 +3410,13 @@ footer {
 .login-div__text p {
   font-size: 1.6rem;
   font-family: "Rubik", sans-serif;
-  color: #706f7b;
+  color:wheat;
   line-height: 1.6;
   margin-bottom: 2rem;
 }
 .login-div__text a {
   text-decoration: none;
-  color: #010103;
+  color: wheat;
   font-size: 1.6rem;
   font-weight: 500;
   transition: all 0.2s;
@@ -3532,7 +3439,7 @@ footer {
   margin-bottom: 1rem;
 }
 .login-div__form form label b {
-  color: #ff4d30;
+  color:wheat;
 }
 .login-div__form form input {
   background-color: #f2f2f2;
@@ -3552,20 +3459,20 @@ footer {
   margin-bottom: 2.5rem;
 }
 .login-div__form form button {
-  background-color: #ff4d30;
+  background-color: gray;
   padding: 1.8rem 3rem;
   border-radius: 0.3rem;
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  box-shadow: 0 20px 25px 0 rgba(226, 56, 22, 0.35);
   transition: all 0.3s;
-  border: 2px solid #ff4d30;
+  border: 2px solid transparent;
   color: white;
   font-size: 1.8rem;
   font-weight: 600;
   cursor: pointer;
 }
 .login-div__form form button:hover {
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.6);
-  background-color: #fa4226;
+  box-shadow: 0 10px 15px 0 rgba(209, 52, 21, 0.6);
+  background-color: orangered;
 }
 /* Register page styling */
 .register-div {
@@ -3605,20 +3512,20 @@ footer {
 .register-div__text p {
   font-size: 1.6rem;
   font-family: "Rubik", sans-serif;
-  color: #706f7b;
+  color: wheat;
   line-height: 1.6;
   margin-bottom: 2rem;
 }
 .register-div__text a {
   text-decoration: none;
-  color: #010103;
+  color: wheat;
   font-size: 1.6rem;
   font-weight: 500;
   transition: all 0.2s;
   margin-bottom: 0.5rem;
 }
 .register-div__text a:hover {
-  color: #ff4d30;
+  color: orangered;
 }
 .register-div__form {
   display: flex;
@@ -3634,7 +3541,7 @@ footer {
   margin-bottom: 1rem;
 }
 .register-div__form form label b {
-  color: #ff4d30;
+  color: wheat;
 }
 .register-div__form form input {
   background-color: #f2f2f2;
@@ -3654,18 +3561,18 @@ footer {
   margin-bottom: 2.5rem;
 }
 .register-div__form form button {
-  background-color: #ff4d30;
+  background-color: gray;
   padding: 1.8rem 3rem;
   border-radius: 0.3rem;
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  box-shadow: 0 10px 15px 0 rgba(217, 58, 26, 0.35);
   transition: all 0.3s;
-  border: 2px solid #ff4d30;
+  border: 2px solid transparent;
   color: white;
   font-size: 1.8rem;
   font-weight: 600;
   cursor: pointer;
 }
 .register-div__form form button:hover {
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.6);
-  background-color: #fa4226;
+  box-shadow: 0 20px 25px 0 rgba(210, 58, 27, 0.6);
+  background-color:orangered;
 }
