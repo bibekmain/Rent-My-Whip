@@ -43,8 +43,8 @@ This application uses languages such as JavaScript, HTML, and CSS.
 For Server-side we used MongoDB server and Heruko to deploy. 
 
 ## Links
-* Deployed Application: INSERT DEPLOYED APPLICATION LINK
-* GitHub Page: https://github.com/bibekmain/Rent-My-Whip.git
+* [Deployed Application](https://rent-my-whip-f97dda1c806d.herokuapp.com/)
+* [GitHub Page](https://github.com/bibekmain/Rent-My-Whip.git)
 
 ## Authors & Acknowledgement
 Website presented to you by Adan J, Bibek M, Hakeem O, Priyanka V, Shiva T.
