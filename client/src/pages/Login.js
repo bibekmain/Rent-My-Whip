@@ -26,7 +26,6 @@ function Login() {
     };
     return (
         <>
-            
             <section className="login-page">
             <HeroPages name="login" />
         <div className="container">
@@ -34,7 +33,7 @@ function Login() {
             <div className="login-div__text">
               <h2>LOGIN/SIGIN</h2>
               <p>
-               login below with your username ,email and password 
+               Login below with your username , email and password 
               </p>
             <div className="login-div__form">
                 <form >
