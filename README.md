@@ -1,12 +1,12 @@
 # Rent My Whip
 
-*Rent My Whip* is an *open-source* project that focuses on the online car rental experience. The application uses React.js for it's front end and a mongodb database for storing user and car information. *Rent My Whip* is an innovative web application designed to revolutionize the way people share and access vehicles. This platform serves as a dynamic marketplace connecting vehicle owners with individuals seeking short-term vehicle rentals.
+*Rent My Whip* is an *open-source* project that focuses on the online car rental experience. The application uses React.js for its front end and a Mongodb database for storing user and car information. *Rent My Whip* is an innovative web application designed to revolutionize the way people share and access vehicles. This platform serves as a dynamic marketplace connecting vehicle owners with individuals seeking short-term vehicle rentals.
 
 ## Getting Started
 To use *Rent My Whip*, simply visit the live website and click on Book Ride to start your rental journey.
  
 ## Usage
-- Check out our About page, by navigating through the About button at the top of the home page, to get insight on what we do.
+- Check out our About page, by navigating through the About button at the top of the home page, to get insight into what we do.
 - Click on Vehicle Models to look at our currently listed vehicles available for rent.
 - Click on Book Ride to schedule your perfect rental vehicle.
 
@@ -34,7 +34,7 @@ This application uses languages such as JavaScript, HTML, and CSS.
 - Mongoose
 - React
 
-<ins>Other<ins>
+<ins>Honorable Mentions<ins>
 - Node.js
 - JWT
 - GraphQL
