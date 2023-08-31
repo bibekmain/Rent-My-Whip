@@ -1,9 +1,11 @@
+// inside src/Login.jsx
+
 import React from "react";
 import { useForm } from "react-hook-form";
 import Footer from "../components/Footer";
 import HeroPages from "../components/HeroPages";
 
-function Register() {
+function Login() {
     const {
         register,
         handleSubmit,
@@ -24,23 +26,23 @@ function Register() {
     };
     return (
         <>
-            {/* <p className="logintitle">Login Form</p> */}
-            <section className="contact-page">
-        <HeroPages name="register" />
+            
+            <section className="login-page">
+            <HeroPages name="login" />
         <div className="container">
-          <div className="contact-div">
-            <div className="contact-div__text">
-              <h2>REGISTER</h2>
+          <div className="login-div">
+            <div className="login-div__text">
+              <h2>LOGIN/SIGIN</h2>
               <p>
-               Register or create your account here
+               login below with your username ,email and password 
               </p>
-            <div className="contact-div__form">
+            <div className="login-div__form">
                 <form >
                     <label>
-                      <b>USERNAME *</b>
-                      </label>
+                    <b>USERNAME *</b> 
+                    </label>
                     <input type="text" placeholder="Enter Username" />
-                   
+                    
                     <label>
                         <b>EMAIL *</b>
                     </label>
@@ -50,25 +52,20 @@ function Register() {
                         <b>PASSWORD *</b>
                     </label>
                     <input type="password" placeholder="Eneter password"></input>
-                    <label>
-                        <b>CONFIRM PASSWORD *</b>
-                    </label>
-                    <input type="password" placeholder="Eneter password"></input>
-
 
                     <button type="submit">
-                        <i className="fa-solid fa-envelope-open-text"></i>&nbsp; REGISTER
+                        <i className="fa-solid fa-envelope-open-text"></i>&nbsp; LOGIN
                         
                     </button>
                 </form>
             </div>
 </div>
 </div>
-
-        </div>
+</div>
+   
             <Footer />
 </section>
         </>
     );
 }
-export default Register;
+export default Login;

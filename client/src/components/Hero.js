@@ -37,28 +37,28 @@ function Hero() {
           {/* <img className="bg-shape" src={BgShape} alt="bg-shape" /> */}
           <div className="hero-content">
             <div className="hero-content__text">
-              {/* <h4>Adventure is out there!
-No road is long with a good car rental company
-Do you have the spirit of adventure, too?</h4> */}
-              <h1>
-                RENT <span>MY</span>WHIP
+              <h1 class="text" >
+                RENT MY  WHIP
+                
               </h1>
-              <p>
-              Adventure is out there!
-No road is long with a good car rental company
-Do you have the spirit of adventure, too?
-              </p>
+
+              <h4>Adventure is out there!
+                No road is long with a good car rental company.
+                Do you have the spirit of adventure, too?</h4>
+
               <div className="hero-content__text__btns">
                 <Link
                   onClick={bookBtn}
-                  className="hero-content__text__btns__book-ride"
+                  className="animated-button1"
                   to="/"
                 >
                   Book Ride &nbsp; <i className="fa-solid fa-circle-check"></i>
+                  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
                 </Link>
-                {/* <Link className="hero-content__text__btns__learn-more" to="/">
-                  Learn More &nbsp; <i className="fa-solid fa-angle-right"></i>
-                </Link> */}
+            
               </div>
             </div>
           </div>
