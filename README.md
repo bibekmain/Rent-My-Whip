@@ -3,10 +3,12 @@
 *Rent My Whip* is an *open-source* project that focuses on the online car rental experience. The application uses React.js for it's front end and a mongodb database for storing user and car information. *Rent My Whip* is an innovative web application designed to revolutionize the way people share and access vehicles. This platform serves as a dynamic marketplace connecting vehicle owners with individuals seeking short-term vehicle rentals.
 
 ## Getting Started
-To use *Rent My Whip*, simply visit the live website and click on Book Ride to start your rental journey. Check out our About page, navigated through the about button at the top of the home page, to get insight on what we do. Click on Vehicle Models to look at our currently listed vehicles avaliable for rent. 
+To use *Rent My Whip*, simply visit the live website and click on Book Ride to start your rental journey.
  
 ## Usage
-TODO: Add usage instructions and gif attachments
+- Check out our About page, by navigating through the About button at the top of the home page, to get insight on what we do.
+- Click on Vehicle Models to look at our currently listed vehicles available for rent.
+- Click on Book Ride to schedule your perfect rental vehicle.
 
 ### Usage Demo
 # TODO: INSERT GIF LINK
@@ -16,10 +18,10 @@ TODO: Add usage instructions and gif attachments
 *Rent My Whip* offers a variety of features to help users find the right car for their perfect ride:
 
 - **Lineup of all types of cars** Users can select from all types of modern and luxury to rustic and eventful cars for their ride
-- **Account Feature** *Rent My Whip* provides an account feature to keep track of rented cars and schedule for car rentals ahead of time.
+- **Account Feature** *Rent My Whip* provides an account feature to keep track of rented cars and schedule car rentals ahead of time.
 
 ## TECHNOLOGIES USED
-This application uses languages such as JavaScript, Html, and CSS.
+This application uses languages such as JavaScript, HTML, and CSS.
 
 <ins>Front End<ins>
 - React
@@ -38,7 +40,7 @@ This application uses languages such as JavaScript, Html, and CSS.
 - GraphQL
 - Nodemon
 
-For Server-side we used Mongodb server and Heruko to deploy. 
+For Server-side we used MongoDB server and Heruko to deploy. 
 
 ## Links
 * Deployed Application: INSERT DEPLOYED APPLICATION LINK
