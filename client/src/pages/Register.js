@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useForm } from "react-hook-form";
 import Footer from "../components/Footer";
@@ -26,16 +25,16 @@ function Register() {
     return (
         <>
             {/* <p className="logintitle">Login Form</p> */}
-            <section className="contact-page">
+            <section className="register-page">
         <HeroPages name="register" />
         <div className="container">
-          <div className="contact-div">
-            <div className="contact-div__text">
+          <div className="register-div">
+            <div className="register-div__text">
               <h2>REGISTER</h2>
               <p>
                Register or create your account here
               </p>
-            <div className="contact-div__form">
+            <div className="register-div__form">
                 <form >
                     <label>
                       <b>USERNAME *</b>
@@ -47,7 +46,6 @@ function Register() {
                     </label>
                     <input type="email" placeholder="youremail@example.com" ></input>
 
-
                     <label>
                         <b>PASSWORD *</b>
                     </label>
@@ -58,14 +56,7 @@ function Register() {
                     <input type="password" placeholder="Eneter password"></input>
 
 
-            <Link to="/login">Click Here to Login</Link>
-      </Form>  
-    </>
-  );
-};
-
-
-                   <button type="submit">
+                    <button type="submit">
                         <i className="fa-solid fa-envelope-open-text"></i>&nbsp; REGISTER
                         
                     </button>

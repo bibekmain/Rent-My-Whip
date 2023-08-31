@@ -3199,30 +3199,6 @@ footer {
   font-size: 4.6rem;
 }
 
-/* .book-banner {
-  display: flex;
-  width: 100%;
-  height: 20rem;
-  background-image: url("/src/images/banners/book-banner.png");
-  position: relative;
-  margin-top: 7rem;
-}
-@media (max-width: 750px) {
-  .book-banner {
-    height: -moz-fit-content;
-    height: fit-content;
-    padding: 1rem 0;
-  } */
-/* } */
-/* .book-banner__overlay {
-  background-color:transparent;
-  opacity: 0.89;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-} */
 
 .text-content {
   color: white;
