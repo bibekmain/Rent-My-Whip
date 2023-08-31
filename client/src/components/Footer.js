@@ -6,10 +6,10 @@ function Footer() {
           <div className="footer-content">
             <ul className="footer-content__1">
               <li>
-                <span>CAR</span> Rental
+                <span>G</span> 10
               </li>
               <li>
-                contact us for any car rental needs at
+                Contact us for any car rental needs
               </li>
               <li>
                 <a href="tel:123456789">
@@ -42,7 +42,12 @@ function Footer() {
             <ul className="footer-content__2">
               <li>Questions</li>
               <li>
-                <a href="#home">Github</a>
+              <i className="fa-solid fa-envelope">For any questions conatact us at </i>
+              <li>
+             <a href="#home">
+                  Github
+                  </a>
+                  </li>
               </li>
             </ul>
 

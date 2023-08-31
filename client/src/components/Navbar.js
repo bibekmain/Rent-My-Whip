@@ -52,31 +52,31 @@ function Navbar() {
           <ul className="navbar__links">
             <li>
               <Link className="home-link" to="/">
-                Home
+                HOME
               </Link>
             </li>
             <li>
               {" "}
               <Link className="about-link" to="/about">
-                About
+                ABOUT
               </Link>
             </li>
             <li>
               {" "}
               <Link className="models-link" to="/models">
-                Vehicle Models
+               MODELS
               </Link>
             </li>
             
             <li>
               {" "}
               <Link className="contact-link" to="/contact">
-                Contact
+                CONTACT
               </Link>
             </li>
           </ul>
           <div className="navbar__buttons">
-            <Link className="navbar__buttons__sign-in" to="/">
+            <Link className="navbar__buttons__sign-in" to="/login">
               Sign In
             </Link>
             <Link className="navbar__buttons__register" to="/register">
