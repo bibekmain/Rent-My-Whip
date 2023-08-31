@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 import React, { useState } from 'react';
-import { Form, Button, Alert, Input } from 'react-bootstrap';
+import { Form, Button, Alert } from 'react-bootstrap';
 
 import { useMutation }  from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
 import Auth from '../utils/auth';
-
 
 const Register = () => {
 // set initial form state
@@ -72,7 +71,7 @@ const handleFormSubmit = async (event) => {
               value={userFormData.username}
               required
             >
-              <Input />
+              {/* <Input /> */}
             </Form.Item>
             <Form.Item
               type='email'
@@ -82,7 +81,7 @@ const handleFormSubmit = async (event) => {
               value={userFormData.email}
               required
             >
-              <Input />
+              {/* <Input /> */}
             </Form.Item>
             <Form.Item
               type='password'
@@ -92,7 +91,7 @@ const handleFormSubmit = async (event) => {
               value={userFormData.password}
               required
             >
-              <Input />
+              {/* <Input /> */}
             </Form.Item>
 
             <button className="btn1 mt-2 mb-3">Register</button>
