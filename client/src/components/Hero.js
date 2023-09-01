@@ -35,7 +35,7 @@ function Hero() {
           {/* <img className="bg-shape" src={BgShape} alt="bg-shape" /> */}
           <div className="hero-content">
             <div className="hero-content__text">
-              <h1 class="text" >
+              <h1 className="text" >
                 RENT MY  WHIP
                 
               </h1>
