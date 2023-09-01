@@ -11,8 +11,8 @@ To use *Rent My Whip*, simply visit the live website and click on Book Ride to s
 - Click on Book Ride to schedule your perfect rental vehicle.
 
 ### Usage Demo
-# TODO: INSERT GIF LINK
-![Demo GIF for Rent My Whip](INSERT LINK HERE) 
+
+![Demo GIF for Rent My Whip](https://github.com/bibekmain/Rent-My-Whip/blob/main/assets/demo.gif?raw=true) 
 
 ## Features
 *Rent My Whip* offers a variety of features to help users find the right car for their perfect ride:
